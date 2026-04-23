@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pham Ngoc Kha | Portfolio</title>
 </head>
-<body>
-    <div id="top"></div>
-    
-    <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
-        <div class="w-full lg:w-[80%] p-12">
-            <h1 class="text-6xl font-bold mb-10 text-gray-800 leading-tight">
-                Hi, my name is <span class="text-teal-400">Pham Ngoc Kha</span><br>
-                I'm the Web Developer.
-            </h1>
-            <a href="#about" class="inline-block border-2 border-teal-400 px-10 py-4 text-teal-400 uppercase font-bold hover:bg-teal-400 hover:text-white transition-all">
-                Know more
-            </a>
-        </div>
-    </section>
+<body class="bg-gray-100 text-gray-900">
+    <header class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-white">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+            Hi, my name is <span class="text-teal-500">Pham Ngoc Kha</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8">
+            I'm a Computer Science Student & Web Developer.
+        </p>
+        <a href="#about" class="border-2 border-teal-500 text-teal-500 px-8 py-3 font-bold hover:bg-teal-500 hover:text-white transition-all duration-300">
+            KNOW MORE
+        </a>
+    </header>
 
-    <section id="about" class="min-h-screen bg-teal-400 text-white flex flex-col justify-center items-center p-8 lg:p-24">
-        <h2 class="text-4xl font-bold uppercase mb-16">About Me</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl">
+    <section id="about" class="min-h-screen bg-teal-500 text-white flex flex-col justify-center items-center p-10">
+        <h2 class="text-3xl md:text-5xl font-bold mb-12 uppercase tracking-widest">About Me</h2>
+        <div class="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="flex justify-center">
-                <img src="https://nguyenhuuquyen.com/imgs/avatar.png" alt="Avatar" class="rounded-lg shadow-2xl w-64 h-64 object-cover">
+                <img src="https://nguyenhuuquyen.com/imgs/avatar.png" alt="Kha's Avatar" class="rounded-lg shadow-2xl w-64 h-64 object-cover border-4 border-white">
             </div>
-            <div class="lg:col-span-2 space-y-6">
-                <p class="text-xl font-light leading-relaxed">
-                    I am a Computer Science student at VNU. I love building beautiful and functional websites. 
-                    This project is my first step into the world of professional Web Development.
+            <div class="space-y-6 text-lg">
+                <p>
+                    I am currently majoring in Computer Science and Engineering. I have a strong interest in network systems and web development.
                 </p>
-                <a href="#" class="inline-block border-2 border-white px-8 py-3 uppercase font-bold hover:bg-white hover:text-teal-400 transition-all">
+                <p>
+                    This portfolio is a showcase of my journey in learning modern web technologies like Tailwind CSS and Vite.
+                </p>
+                <a href="#" class="inline-block border-2 border-white px-6 py-2 font-bold hover:bg-white hover:text-teal-500 transition-all">
                     View Resume
                 </a>
             </div>
         </div>
     </section>
 
- <script type="module" src="/src/scripts/application.js"></script>
+    <script type="module" src="./src/scripts/application.js"></script>
 </body>
 </html>
