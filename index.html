@@ -3,44 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kha's Portfolio</title>
-    <meta name="title" content="Kha's Portfolio">
-    <meta name="description" content="Hi, my name is Pham Ngoc Kha. I'm a Web Developer.">
+    <title>Pham Ngoc Kha | Portfolio</title>
 </head>
-<body>
+<body class="bg-gray-100">
+
     <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
-        <div class="w-full lg:w-[80%] p-12 text-gray-800">
-            <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
-                <span class="banner-text">Hi, my name is <span class="text-teal-400">Pham Ngoc Kha</span></span>
-                <span class="text-gray-800 banner-text">I'm the Web Developer.</span>
-            </h1>
-            <a href="#about-me" class="banner-cta uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer inline-block">
-                <span class="text-xl px-8 py-3 font-light">Know more</span>
-            </a>
-        </div>
+      <div class="w-full lg:w-[80%] p-12 text-gray-800">
+        <h1 class="text-6xl font-bold mb-10 grid grid-cols-1 lg:gap-5">
+          <span>Hi, my name is <span class="text-teal-400">Pham Ngoc Kha</span></span>
+          <span class="text-gray-800">I'm the Web Developer.</span>
+        </h1>
+        <a href="#about-me" class="uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-all cursor-pointer inline-block">
+          <span class="text-xl px-8 py-3 font-light">Know more</span>
+        </a>
+      </div>
     </section>
 
     <section id="about-me" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
-        <div class="w-full lg:w-[60%] mb-5">
-            <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-12">About Me</h2>
-            <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
-                <div class="flex justify-center items-center text-center col-span-1">
-                    <img class="object-cover max-w-xs lg:w-auto rounded-full shadow-lg" src="https://nguyenhuuquyen.com/imgs/avatar.png" alt="My avatar" />
-                </div>
-                <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
-                    <div class="p-0 text-center lg:p-8 lg:text-start">
-                        <p class="pb-3 text-lg font-light mb-5">
-                            I love programming, application development, and research software architecture. My career objective is to become a Senior Software Engineer.
-                        </p>
-                        <a href="#" class="uppercase border-2 border-white p-3 text-white hover:bg-white hover:text-teal-400 transition-colors inline-block">
-                            <span class="text-xl px-8 py-3 font-normal">View My CV</span>
-                        </a>
-                    </div>
-                </div>
+      <div class="w-full lg:w-[60%] mb-5">
+        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-12">About Me</h2>
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+          <div class="flex justify-center items-center col-span-1">
+            <img class="object-cover max-w-xs lg:w-auto rounded-lg shadow-xl" 
+                 src="https://nguyenhuuquyen.com/imgs/avatar.png" 
+                 alt="My avatar" />
+          </div>
+          <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
+            <div class="p-0 text-center lg:p-8 lg:text-left">
+              <p class="pb-3 text-lg font-light mb-5 leading-relaxed">
+                I am a Computer Science student passionate about building modern web applications. 
+                I love programming, exploring software architecture, and creating clean, responsive user interfaces.
+              </p>
+              <a href="#" target="_blank" class="uppercase border-2 border-white p-3 hover:bg-white hover:text-teal-400 transition-all inline-block">
+                <span class="text-xl px-8 py-3 font-normal">View My CV</span>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <script type="module" src="/src/scripts/application.js"></script>
-</body>
-</html>
+    <section id="contact" class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+      <div class="w-full lg:w-[60%] mb-5">
+        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
+        <p class="flex flex-col justify-center items-center pt-5 pb-5 text-center">
+          <span class="text-2xl text-teal-500 mb-3 uppercase">I look forward to working with you</span>
+          <span>I'm so happy that my skills might bring values to you. Let's connect for work!</span>
+        </p>
+      </div>
+      <a href="mailto:your-email@gmail.com" 
+         class="border-2 border-teal-400 px-8 py-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-all uppercase text-xl font-light">
+        Send An Email Now
+      </a>
+    </section>
+
+    <footer class="bg-neutral-900 min-h-[300px] pt-12 pb-12 flex flex-col justify-center items-center text-white">
+      <ul class="flex flex-row space-x-8">
+        <li class="hover:-translate-y-2 transition-transform cursor-pointer">
+          <a href="#"><img class="w-10 grayscale hover:grayscale-0" src="/imgs/twitter.svg" alt="Twitter"/></a>
+        </li>
+        <li class="hover:-translate-y-2 transition-transform cursor-pointer">
+          <a href="#"><img class="w-10 grayscale hover:grayscale-0" src="/imgs/linkedin.svg" alt="LinkedIn"/></a>
+        </li>
+        <li class="hover:-translate-y-2 transition-transform cursor-pointer">
+          <a href="#"><img class="w-10 grayscale hover:grayscale-0" src="/imgs/github.svg" alt="GitHub"/></a>
+        </li>
+      </ul>
+      <hr class="w-1/4 border-gray-500 mt-10"/>
+      <p class="text-lg text-gray-500 mt-5">©2026 - Pham Ngoc Kha</p>
+    </footer>
+
+    <script type="module" src="/src/scripts/application.js

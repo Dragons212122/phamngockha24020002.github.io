@@ -1,3 +1,4 @@
 import '../css/style.css'
+import initScrollReveal from './scroll-reveal';
 
-console.log("Tailwind and Vite are synced!");
+initScrollReveal();
